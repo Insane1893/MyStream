@@ -74,8 +74,8 @@ async def start(b, m):
             text='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('Bots Channel', url='https://t.me/TorrentDrive_OffTopic'), InlineKeyboardButton('Support Group', url='https://t.me/TorrentDrive_OffTopic')],
-                    [InlineKeyboardButton('Developer', url='https://t.me/TorrentDrive_OffTopic')]
+                    [InlineKeyboardButton('Bots Channel', url='https://t.me/TorrentTo_Drive'), InlineKeyboardButton('Support Group', url='https://t.me/TorrentDrive_OffTopic')],
+                    [InlineKeyboardButton('Developer', url='https://t.me/TorrentTo_Drive')]
                 ]
             ),
             disable_web_page_preview=True
@@ -129,7 +129,7 @@ async def start(b, m):
                                      get_msg.message_id,
                                      file_name)
 
-        msg_text = "Bruh! 😁\nYour Link Generated! 🤓\n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`"
+        msg_text = "Bruh! 😁\nYour Link Generated! 🤓\n\n📂 <b>File Name:</b> <i>{}</i>\n<b>File Size:</b> <i>{}</i>\n\n📥 <b>Download Link:</b> <i>{}</i>"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
@@ -183,8 +183,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Support Group", url="https://t.me/TorrentDrive_OffTopic"), InlineKeyboardButton("Bots Channel", url="https://t.me/TorrentDrive_OffTopic")],
-                [InlineKeyboardButton("Developer", url="https://t.me/TorrentDrive_OffTopic")]
+                [InlineKeyboardButton("Support Group", url="https://t.me/TorrentDrive_OffTopic"), InlineKeyboardButton("Bots Channel", url="https://t.me/TorrentTo_Drive")],
+                [InlineKeyboardButton("Developer", url="https://t.me/TorrentTo_Drive")]
             ]
         )
     )
