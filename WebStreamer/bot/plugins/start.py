@@ -129,7 +129,13 @@ async def start(b, m):
                                      get_msg.message_id,
                                      file_name)
 
-        msg_text = "Bruh! 😁\nYour Link Generated! 🤓\n\n📂 <b>File Name:</b> <i>{}</i>\n<b>File Size:</b> <i>{}</i>\n\n📥 <b>Download Link:</b> <i>{}</i>"
+        msg_text = """
+<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>
+<b>📂 Folder Name :</b> <i>{}</i>
+<b>📦 File Size :</b> <i>{}</i>
+<b>📥 Download :</b> <i>{}</i>
+<b>🚸 Note : LINK WON'T EXPIRE TILL I DELETE</b>"""
+
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
