@@ -132,8 +132,11 @@ async def start(b, m):
         msg_text = """
 <i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>
 <b>📂 Folder Name :</b> <i>{}</i>
+
 <b>📦 File Size :</b> <i>{}</i>
+
 <b>📥 Download :</b> <i>{}</i>
+
 <b>🚸 Note : LINK WON'T EXPIRE TILL I DELETE</b>"""
 
         await m.reply_text(
