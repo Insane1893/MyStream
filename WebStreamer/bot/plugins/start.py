@@ -141,7 +141,9 @@ async def start(b, m):
 
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
-            parse_mode="Markdown",
+            parse_mode="HTML", 
+            quote=True,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Download Now", url=stream_link)]])
         )
 
